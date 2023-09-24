@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Broadcasting App</title>
+</head>
+<body>
+    <h1>Welcome to Barnabas's OP App</h1>
+    <form method="POST" action="/">
+        <label for="ssid">Enter SSID name:</label>
+        <input type="text" id="ssid" name="ssid" required>
+        <button type="submit">Start Broadcasting</button>
+    </form>
+    
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
